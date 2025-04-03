@@ -1,41 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Currency Converter</title>
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Конвертер валют</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
     <div class="container">
-        <h1>Currency converter</h1>
-        <p>            
-            <select name="currency1" id="currency1">
-                <option>-</option>
-                <option>EUR</option>
-                <option>UAH</option>
-                <option>USDT</option>
-                <option>YEN</option>
-            </select>
-
-            <input type="number" id="amount1" placeholder="0" />
+        <h2>Конвертер валют</h2>
+        <input type="number" id="amount" placeholder="Введіть суму">
         
-        </p>
+        <select id="fromCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="JPY">JPY</option>
+            <option value="CAD">CAD</option>
+        </select>
 
-        <p>            
-            <select name="currency2" id="currency2">
-                <option>-</option>
-                <option>EUR</option>
-                <option>UAH</option>
-                <option>USDT</option>
-                <option>YEN</option>
-            </select>
+        <span>→</span>
 
-            <input type="number" id="amount2" placeholder="0" />
-        </p>
+        <select id="toCurrency">
+            <option value="USD">USD</option>
+            <option value="EUR">EUR</option>
+            <option value="JPY">JPY</option>
+            <option value="CAD">CAD</option>
+        </select>
+
+        <button id="convert">Конвертувати</button>
+        <p id="result"></p>
     </div>
 
-    <script src="./bundle.js"></script>
-
-  </body>
+    <script src="./JS/script.js"></script>
+</body>
 </html>
