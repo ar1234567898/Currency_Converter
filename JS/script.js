@@ -1,4 +1,5 @@
 document.getElementById("convert").addEventListener("click", async function () {
+    value = document.getElementById("fromCurrency").value;
     const amount = document.getElementById("amount").value;
     const fromCurrency = document.getElementById("fromCurrency").value;
     const toCurrency = document.getElementById("toCurrency").value;
@@ -6,6 +7,11 @@ document.getElementById("convert").addEventListener("click", async function () {
 
     if (amount === "" || amount <= 0) {
         resultElement.innerText = "Введіть коректну суму!";
+        return;
+    }   
+
+    if (value == 'none') {
+        resultElement.innerText = "Виберіть валюти для конвертації!";
         return;
     }
 
