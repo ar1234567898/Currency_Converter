@@ -9,10 +9,12 @@ body {
 
 .container {
     background: white;
+    border: black 1px solid;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
+    min-height: 180px;
 }
 
 input, select, button {
@@ -22,12 +24,13 @@ input, select, button {
 }
 
 button {
-    background: #007bff;
+    background: #0a6fdc;
+    border-radius: 7px;
     color: white;
     border: none;
     cursor: pointer;
 }
 
 button:hover {
-    background: #0056b3;
+    background: #003e81;
 }
